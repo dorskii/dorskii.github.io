@@ -2,8 +2,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #000000;
-
+    background: linear-gradient(to right, rgb(3, 0, 46) , rgb(1, 0, 87));
     color: #fff;
     text-align: center;
 }
