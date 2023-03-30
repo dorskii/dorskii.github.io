@@ -2,17 +2,18 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #ff8d00;
+    background-color: #000000;
+    
     color: #fff;
     text-align: center;
 }
 
 h1 span {
-    color: #4b0b0b;
+    color: #0084ff;
 }
 
 a:any-link {
-    color: #000;
+    color: rgb(107, 107, 107);
     text-decoration: none;
     font-weight: 800;
 }
