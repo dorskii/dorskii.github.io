@@ -1,28 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(to right, rgb(3, 0, 46) , rgb(1, 0, 87));
+    background-color: #000000;
+    animation-name: color;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
     color: #fff;
     text-align: center;
 }
 
 h1 span {
     color: #0084ff;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px #0084ff;
 }
 
 a:any-link {
-    color: rgb(107, 107, 107);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: 800;
 }
 
 div.container a:any-link {
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 div.container a:any-link:hover {
-    color: #FFF;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 2px 1px #0B2447, 
+      -1px 3px 1px #19376D, 
+      -2px 5px 1px #576CBC;;
 }
 
 div.container {
@@ -35,11 +42,12 @@ div.container div {
 }
 
 div.container .cta a {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 div.container div.cta a:hover {
-    color: #000;
+    color: rgb(0, 0, 0);
+    
 }
 
 footer {
@@ -47,4 +55,23 @@ footer {
     bottom: 0;
     right: 0;
     left: 0;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+
+    text-shadow: -1px 1px 0 #0B2447,
+	    1px 1px 0 #19376D,
+	    1px -1px 0 #576CBC,
+	    -1px -1px 0 #A5D7E8;
 }
+
+@keyframes color {
+    0% {
+      background-color: #000000;
+    }
+    50% {
+      background-color: #0d1324;
+    }
+    100% {
+      background-color: #000000;
+    }
+  }
