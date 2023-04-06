@@ -58,6 +58,18 @@ a:any-link:hover {
     margin-bottom: 5em;
 }
 
+#referrals {
+    font-size:40px;
+    margin-bottom: 5em;
+    color: #F5F3F5; 
+    text-decoration: none;
+}
+
+#referrals:hover {
+    font-size: 60px;
+    transition: all .4s ease;
+}
+
 img {
   transition: transform .7s ease-in-out;
 }
