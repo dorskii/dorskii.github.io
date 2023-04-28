@@ -1,0 +1,445 @@
+body {
+    background-color: black;
+    margin-top: 0;
+    color: white;
+    overflow-x: hidden;
+}
+
+#body {
+    background-image: url("images/bg.png");
+    height: 950px;
+    width: 100%;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+#background1 {
+    width: 100%;
+    height: 56.25rem;
+    object-fit:cover;
+    filter: brightness(60%);
+    
+}
+
+#logo1 {
+    position: absolute;
+    top: 40px;
+    left: 344px;
+    z-index: 2;
+    width: 13rem;
+}
+
+#hero {
+    position: absolute;
+    top: 331px;
+    left: 354px;
+    z-index: 2;
+    animation: 0.5s 1  leftright;  
+}
+
+#hello {
+    font-size: 36px;
+    margin-bottom: 0;
+    margin-left: 0.2rem;
+}
+
+#dorskii {
+    font-size: 104px;
+    margin: 0;
+    text-shadow: 0px 4px 20px rgba(255, 255, 255, 0.4);
+}
+
+#point {
+    color: #0094FF;
+    text-shadow: 0px 4px 20px #0095ff42;
+}
+
+#description {
+width: 361px;
+height: 120px;
+opacity: 64%;
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+display: flex;
+align-items: center;
+text-align: justify;
+margin-top: 30px;
+}
+
+#referrals {
+font-weight: 600;
+font-size: 35px;
+line-height: 41px;
+letter-spacing: 0.15em;
+text-decoration: none;
+color: white;
+padding-bottom: 5px;
+border-bottom: solid 3px #0094FF;
+box-sizing: content-box;
+padding-left: 5px;
+border-radius: 10px;
+box-shadow: 0 6px 5px #0095ff2f;
+}
+#referrals:hover {
+    background-color: #0095ff2a;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 7px;
+}
+
+/* SOCIALS */
+
+#socials {
+    position: absolute;
+    width: 185px;
+    height: 427px;
+    right: 325px;
+    top: 341px;
+    animation: 0.5s 1  rightleft; 
+}
+
+#socials-title {
+    transform: rotate(90deg);
+    letter-spacing: 0.6em;
+    font-size: 35px;
+    width:max-content;
+    position: relative;
+    top: 40%;
+    right: 28%;
+}
+
+#social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    padding: 0px;
+    gap: 22px;
+width: 90px;
+height: 426px;
+left: 0;
+top: 0;
+    
+}
+
+.icons {
+    border: 3px solid #0094FF;
+    border-radius: 10px;
+}.icons:hover{
+    background-color:#0095ff2a ;
+}
+
+.twitter {
+  padding:8px 9px 8px 9px;
+}
+
+.instagram{
+  padding:8px 13px 8px 13px;
+}
+
+.twitch {
+  padding:8px 9px 8px 9px;
+}
+
+.youtube {
+  font-size: 50px;
+  padding:9px 13px 9px 13px;
+}
+
+#footer {
+    text-align: center;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 0.3em;
+opacity: 0.75;
+}
+
+/* ANIMATIONS */
+
+@keyframes leftright {
+    from {
+       left: -100px;
+    }
+
+    to {
+       left: 354px;
+    }
+}
+
+@keyframes rightleft {
+    from {
+       right: -100px;
+    }
+
+    to {
+       right: 325px;
+    }
+}
+
+
+@media (max-width:1300px) {
+
+    #body {
+        position: initial;
+        background-image: none;
+    }
+
+    #footer {
+    }
+
+    #logo1 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 15rem;
+        display: block;
+        position: static;
+        
+    }
+
+    #hero {
+        position: initial;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: max-content;
+        margin-top: 15%;
+    }
+
+    #socials {
+        position: initial;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: max-content;
+        margin-top: 20%;
+        height: max-content;
+    }
+
+    #socials-title {
+        transform: rotate(0deg);
+        position: initial;
+
+    }
+    #social-icons {
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+        
+        gap: 22px;
+        position: initial;
+        height: 200px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* REFERRALS */
+
+#body2 {
+    background-image: url("images/bg2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height:1000px;
+    width: 100%;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+#logo2 {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    width: 13rem;
+}
+
+#footer2 {
+    text-align: center;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 0.3em;
+opacity: 0.75;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0%;
+right: 0;
+bottom: 0%;
+}
+
+#referral-links {
+    position: relative;
+}
+
+#ref-title {
+font-size: 48px;
+line-height: 56px;
+text-align: center;
+position: absolute;
+top: 193px;
+left: 0;
+right: 0%;
+margin-left: auto;
+margin-right: auto;
+}
+
+#ref1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    width: 524px;
+   height: 42px;
+   left: 0;
+      right: 0%;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
+      top: 440px;
+      width: max-content;
+}
+
+.ref-link {
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+    font-weight: 900;
+    text-decoration-color: #0094FF;
+    text-shadow: 0 6px 5px #0095ff2f;
+}
+.ref-link:hover {
+background-color: #0095ff2a;
+border-radius: 10px;
+}
+
+
+.ref-desc {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+}
+
+#ref2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+width: 736px;
+height: 38px;
+left: 0;
+        right: 0%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        top: 591px;
+        width: max-content;
+}
+
+#ref3 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+width: 556px;
+height: 42px;
+left: 0;
+        right: 0%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        top: 734px;
+        width: max-content;
+}
+
+@media (max-width:1300px) {
+    #ref1 {
+      left: 0;
+      right: 0%;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
+      top: 480px;
+      width: max-content;
+    }
+
+    #ref2 {
+        left: 0;
+        right: 0%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        top: 601px;
+        width: max-content;
+    }
+
+    #ref3 {
+        left: 0;
+        right: 0%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        top: 714px;
+        width: max-content;
+    }
+
+    .ref-link {
+        font-size: 26px;
+        line-height: 32px;
+        color: #FFFFFF;
+        font-weight: 900;
+        text-decoration-color: #0094FF;
+    }
+    
+    .ref-desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    #ref-title {
+        font-size: 34px;
+        line-height: 56px;
+        text-align: center;
+        position: absolute;
+        top: 203px;
+        left: 0;
+        right: 0%;
+        margin-left: auto;
+        margin-right: auto;
+        }
+}
+
+
+
+
+
+#stefy {
+    color: #0094FF;
+    text-decoration: none;
+}
